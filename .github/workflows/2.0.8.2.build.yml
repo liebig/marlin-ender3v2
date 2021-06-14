@@ -56,4 +56,4 @@ jobs:
         with:
           name: firmware
           path: |
-            .pio\build\STM32F103RET6_creality\firmware-*.bin
+            .\.pio\build\STM32F103RET6_creality\firmware-*.bin
