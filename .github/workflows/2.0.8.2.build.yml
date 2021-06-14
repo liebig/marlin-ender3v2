@@ -56,3 +56,10 @@ jobs:
         with:
           name: firmware
           path: .pio/build/STM32F103RET6_creality/firmware-*.bin
+          
+      - uses: actions/download-artifact@v2
+        with:
+          name: firmware
+
+      - name: Display structure of downloaded files
+        run: ls -R
