@@ -51,3 +51,9 @@ jobs:
           
       - name: Run PlatformIO
         run: pio run -e STM32F103RET6_creality
+        
+      - uses: actions/upload-artifact@v2
+        with:
+          name: firmware
+          path: |
+            .pio\build\STM32F103RET6_creality\firmware-*.bin
