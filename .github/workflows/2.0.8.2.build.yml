@@ -55,7 +55,13 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: firmware
+          path: .pio/build/STM32F103RET6_creality/firmware-*.bin
+          if-no-files-found: error
+          
+      - uses: actions/upload-artifact@v2
+        with:
+          name: configuration
           path: |
-            .pio/build/STM32F103RET6_creality/firmware-*.bin
             Marlin/Configuration.h
             Marlin/Configuration_adv.h
+          if-no-files-found: error
