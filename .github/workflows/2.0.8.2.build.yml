@@ -4,7 +4,7 @@ name: 2.0.8.2
 
 # Controls when the action will run. 
 on:
-  # Triggers the workflow on push for the 2.0.8.2 branch
+  # Triggers the workflow on push for the main branch
   push:
     branches:
       - main
@@ -24,7 +24,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
-          ref: 2.0.8.2
+          ref: main
       
       - name: Cache pip
         uses: actions/cache@v2
