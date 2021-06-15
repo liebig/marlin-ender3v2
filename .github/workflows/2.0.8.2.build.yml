@@ -4,7 +4,7 @@ name: 2.0.8.2
 
 # Controls when the action will run. 
 on:
-  # Triggers the workflow on pushfor the 2.0.8.2 branch
+  # Triggers the workflow on push for the 2.0.8.2 branch
   push:
     branches:
       - 2.0.8.2
