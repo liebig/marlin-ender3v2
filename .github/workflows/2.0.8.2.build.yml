@@ -59,7 +59,3 @@ jobs:
             .pio/build/STM32F103RET6_creality/firmware-*.bin
             Marlin/Configuration.h
             Marlin/Configuration_adv.h
-
-      - uses: actions/download-artifact@v2
-        with:
-          name: firmware
